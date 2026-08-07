@@ -46,29 +46,29 @@
 // reversing a number
 
 
-// #include<iostream>
-// using namespace std;
-// int main(){
+#include<iostream>
+using namespace std;
+int main(){
 
-//     int n=121;
-//     int rev=0;
-//     int rem=0;
-//     int a=n;
-//     while(n>0){
-//         rem=n%10;
-//         rev=(rev*10)+rem;
-//         n=n/10;
+    int n=121;
+    int rev=0;
+    int rem=0;
+    int a=n;
+    while(n>0){
+        rem=n%10;
+        rev=(rev*10)+rem;
+        n=n/10;
 
-//     }
-//     cout<<rev<<endl<<n;
-//     if(a==rev){
-//       cout<<endl<<"palindrome";
-//       }
-//      else{
-//         cout<<endl<<"not palindrome";
-//      } 
+    }
+    cout<<rev<<endl<<n;
+    if(a==rev){
+      cout<<endl<<"palindrome";
+      }
+     else{
+        cout<<endl<<"not palindrome";
+     } 
     
-// }
+}
 
 
 
