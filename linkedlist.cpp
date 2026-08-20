@@ -48,10 +48,23 @@ class linkedlist{
         }
         Node *temp=head;
         head=head->next;
-        //temp->next=NULL;
+        temp->next=NULL;// for deletion of connection we do it
         delete temp;
     }
+      
+    void pop_back(){
+        if(head==NULL){
+            return;
 
+        }
+        Node *temp=head;
+        while(temp->next!=NULL){
+         temp=temp->next;
+        }
+        delete tail;
+        tail=temp;
+
+    }
     void printlist(){
         Node *temp=head;
         while (temp!=nullptr)
